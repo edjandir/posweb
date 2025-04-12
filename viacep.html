@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Via CEP</title>
+    <style>
+        body {
+            font-family: Arial; padding: 20px;
+        }
+        input, button {
+            margin: 5px 0; padding: 8px;
+        }
+        .resultado {
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Consultar endereço pelo CEP</h1>
+    <input type="text" name="cep" id="cep" maxlength="8">
+    <button onClick="consultarCEP()">Consultar</button>
+
+    <div class="resultado" id="resultado"></div>
 </body>
 </html>
